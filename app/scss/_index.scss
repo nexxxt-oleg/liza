@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  background-image: url("../images/dist/bg1.svg");
+  background-image: url("../images/dist/sc1_bg.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -44,6 +44,14 @@ body {
       gap: 10px;
       width: 100%;
     }
+  }
+
+  &__mob {
+    position: fixed;
+    z-index: 20;
+    top: 20px;
+    left: 0;
+    right: 0;
   }
 
   &__logo {
@@ -101,7 +109,7 @@ body {
   &__body {
     position: relative;
     z-index: 1;
-    padding: 56px 0 0 131px;
+    padding: 128px 0 0 131px;
 
     &__content {
       width: 100%;
@@ -109,7 +117,7 @@ body {
       text-align: center;
       position: relative;
 
-      z-index: 2;
+      z-index: 6;
 
       h1 {
         font-size: 32px;
@@ -181,7 +189,7 @@ body {
     &__img {
       width: 618px;
       position: absolute;
-      z-index: 1;
+      z-index: 6;
       bottom: -5px;
       left: 670px;
     }
@@ -1072,4 +1080,112 @@ body {
     font-size: 15px;
     color: #2e2e2e;
   }
+}
+
+.header__body__img1 {
+  left: -153px;
+  position: absolute;
+  top: 184px;
+  z-index: 2;
+  width: 193px;
+  height: 160px;
+  img {
+    will-change: transform;
+    animation: figure8 5s linear infinite;
+  }
+}
+
+.header__body__img2 {
+  left:109px;
+  position: absolute;
+  top: 630px;
+  z-index: 2;
+  width: 84px;
+  height: 84px;
+  img {
+    will-change: transform;
+    animation: figure8 6s linear infinite;
+  }
+}
+
+.header__body__img3 {
+  left: 736px;
+  position: absolute;
+  top: 140px;
+  z-index: 2;
+  width: 77px;
+  height: 77px;
+  img {
+    display: block;
+    animation: spin 5s linear infinite;
+    will-change: transform;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header__body__img4 {
+  right: -160px;
+  position: absolute;
+  top: 82px;
+  z-index: 2;
+  width: 174px;
+  height: 123px;
+  img {
+    animation: figure8 5s linear infinite;
+    will-change: transform;
+  }
+}
+.header__body__img5 {
+  position: absolute;
+  right: 311px;
+  top: 363px;
+  z-index: 2;
+  width: 233px;
+  height: 173px;
+  img {
+    display: inline-block;
+    animation: heartbeat 5s ease-in-out infinite both;
+    will-change: transform;
+  }
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  14%  { transform: scale(1.1); }
+  28%  { transform: scale(0.9); }
+  42%  { transform: scale(1.1); }
+  70%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+@keyframes figure8 {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(5px, -5px); }
+  50%  { transform: translate(10px, 0); }
+  75%  { transform: translate(5px, 3px); }
+  100% { transform: translate(0, 0); }
+}
+.header__body__footer a svg {
+  animation: bounce 2s ease-in-out infinite;
+  display: block;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(10px); }
+}
+.section1:after,
+.header__prim__ico img,
+.work-list-footer:after,
+.tools__list:after,
+.section3:after,
+.about-me__wrap:after,
+.faq__footer:after,
+.faq__footer:before {
+  animation: figure8 6s linear infinite;
 }
