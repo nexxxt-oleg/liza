@@ -81,9 +81,10 @@
   .about-me__photo {
     width: 400px;
     bottom: -90px;
+    height: 430px;
 
     img {
-      width: 400px;
+      width: 360px;
       height: auto;
     }
   }
@@ -312,16 +313,22 @@
     font-size: 16px;
   }
   .about-me__photo {
-    width: 100%;
+    width: 300px;
+    margin: 0 auto;
     position: relative;
     left: auto;
     bottom: auto;
+    height: 330px;
 
     img {
-      width: 100%;
+      width: 240px;
       height: auto;
       display: block;
     }
+  }
+  .about-me__content{
+    margin-left: auto;
+    margin-right: auto;
   }
   .about-me__footer {
     display: block;
