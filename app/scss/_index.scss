@@ -1189,3 +1189,7 @@ body {
 .faq__footer:before {
   animation: figure8 6s linear infinite;
 }
+
+.swiper-slide:not(.swiper-slide-active){
+  visibility: hidden;
+}
